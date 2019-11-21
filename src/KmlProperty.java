@@ -28,4 +28,13 @@ class KmlProperty {
     public void setKmlPolygons(List<KmlPolygon> kmlPolygons) {
         this.kmlPolygons = kmlPolygons;
     }
+
+    @Override
+    public String toString() {
+        return "KmlProperty{" +
+                "kmlPoints=" + kmlPoints +
+                ", kmlLines=" + kmlLines +
+                ", kmlPolygons=" + kmlPolygons +
+                '}';
+    }
 }

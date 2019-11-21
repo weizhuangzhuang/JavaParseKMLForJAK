@@ -35,4 +35,13 @@ public class KmlPolygon {
     public void setPoints(List<Coordinate> points) {
         this.points = points;
     }
+
+    @Override
+    public String toString() {
+        return "KmlPolygon{" +
+                "color='" + color + '\'' +
+                ", points=" + points +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

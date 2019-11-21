@@ -198,7 +198,7 @@ public class ParsingKmlUtil {
         kmlProperty.setKmlPoints(kmlPointList);
         kmlProperty.setKmlLines(kmlLineList);
         kmlProperty.setKmlPolygons(kmlPolygonList);
-        System.out.println(kmlProperty);
+        //System.out.println(kmlProperty);
         return kmlProperty;
     }
 
@@ -291,7 +291,7 @@ public class ParsingKmlUtil {
         List<Coordinate> coordinates;
         linearRing = outerBoundaryIs.getLinearRing();//面
         coordinates = linearRing.getCoordinates();
-        ShowCoordinates(coordinates, name);
+        //ShowCoordinates(coordinates, name);
         KmlPolygon kmlPolygon = new KmlPolygon();
         kmlPolygon.setPoints(coordinates);
         kmlPolygon.setName(name);
@@ -299,7 +299,7 @@ public class ParsingKmlUtil {
     }
 
     private void addLineStringToList(int width, List<KmlLine> kmlLineList, List<Coordinate> coordinates, String name) {
-        ShowCoordinates(coordinates, name);
+        //ShowCoordinates(coordinates, name);
         KmlLine kmlLine = new KmlLine();
         kmlLine.setPoints(coordinates);
         kmlLine.setWidth(width);
@@ -308,7 +308,7 @@ public class ParsingKmlUtil {
     }
 
     private void addPointToList(List<KmlPoint> kmlPointList, List<Coordinate> coordinates, String name) {
-        ShowCoordinates(coordinates, name);
+        //ShowCoordinates(coordinates, name);
         KmlPoint kmlPoint = new KmlPoint();
         kmlPoint.setName(name);
         kmlPoint.setPoints(coordinates);
