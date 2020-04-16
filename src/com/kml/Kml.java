@@ -92,7 +92,7 @@ public class Kml {
     public static void main(String[] args) throws Exception {
 
         String srcPath = "D:\\vs\\kml.txt";
-        String destPath = "D:\\vs\\kml1.txt";
+        String destPath = "D:\\vs\\kml22.txt";
 
         run(srcPath , destPath);
 
