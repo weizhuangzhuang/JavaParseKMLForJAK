@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         KmlProperty kmlProperty;
         ParsingKmlUtil parsingKmlUtil = new ParsingKmlUtil();
-        //File file = new File("D:\\vs\\hunan.kml");
-        File file = new File("src/point.kml");
+        File file = new File("D:\\vs\\shanxi.kml");
+        //File file = new File("src/point.kml");
         kmlProperty = parsingKmlUtil.parseKmlForJAK(file);
         assert kmlProperty != null;
 

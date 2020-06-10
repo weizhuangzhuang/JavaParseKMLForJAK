@@ -11,7 +11,7 @@ public class newKml {
 
         KmlProperty kmlProperty;
         ParsingKmlUtil parsingKmlUtil = new ParsingKmlUtil();
-        File file = new File("D:\\vs\\hunan.kml");
+        File file = new File("D:\\vs\\shanxi.kml");
         kmlProperty = parsingKmlUtil.parseKmlForJAK(file);
 
         List<KmlPolygon> kmlPolygons = kmlProperty.getKmlPolygons();

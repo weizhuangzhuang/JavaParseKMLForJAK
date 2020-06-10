@@ -79,7 +79,7 @@ public class Kml {
     public static void run(String filePath , String destPath) throws Exception {
         String s = readKml(filePath);
 
-        String destStr = getStr(replaceString(s) , 2);
+        String destStr = getStr(replaceString(s) , 20);
 
         System.out.println(destStr);
 
@@ -91,15 +91,23 @@ public class Kml {
 
     public static void main(String[] args) throws Exception {
 
-        String srcPath = "D:\\vs\\kml.txt";
-        String destPath = "D:\\vs\\kml22.txt";
+        //String srcPath = "D:\\vs\\榆林市.txt";
+        //String destPath = "D:\\vs\\2\\榆林市2.txt";
 
-        run(srcPath , destPath);
+        //run(srcPath , destPath);
 
         /*for (String s1: strings
              ) {
             System.out.println(s1);
         }*/
+
+        //数据源路径
+        File file = new File("D:\\vs\\yuan");
+        File[] files = file.listFiles();
+        for (File file1: files) {
+            System.out.println(file1.getName());
+            run(file1.getAbsolutePath() , "D:\\vs\\2\\" + file1.getName());
+        }
     }
 
 }
